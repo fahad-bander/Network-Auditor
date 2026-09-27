@@ -1,32 +1,43 @@
-# Network Vulnerability Auditor 🛡️
+# Network Auditor
 
-A lightweight Python-based network security auditing tool designed to scan local networks for active hosts and identify critical exposed services (e.g., NetBIOS, SMB).
+Low-impact network security auditing tool built with Python.
 
----
+## Features
 
-## 🌟 Features
+- ARP host discovery
+- TCP service scanning
+- Service/banner detection
+- HTTP security-header analysis
+- TLS certificate inspection
+- Security findings
+- JSON reporting
+- Bounded asynchronous scanning
 
-- **Layer 2 Discovery:** Uses ARP requests via `Scapy` to discover active devices on the subnet.
-- **Port Security Audit:** Scans critical infrastructure ports (TCP 139 NetBIOS & TCP 445 SMB).
-- **Vulnerability Reporting:** Categorizes findings by severity (`HIGH`, `MEDIUM`) with remediation steps.
-- **JSON Export:** Automatically exports audit results to `network_audit.json` for further analysis.
+## Architecture
 
----
 
-## 📋 Prerequisites
+## Installation
 
-Before running the tool, ensure you have the following installed:
+...
 
-1. **Python 3.x**
-2. **Npcap Driver (Windows Users):**
-   - Download and install [Npcap](https://npcap.com/).
-   - **Crucial:** During installation, check the option: `"Install Npcap in WinPcap API-compatible Mode"`.
+## Usage
 
----
+...
 
-## 🚀 Installation & Usage
+## Example Output
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/Network-Auditor.git](https://github.com/YOUR_USERNAME/Network-Auditor.git)
-   cd Network-Auditor
+...
+
+## Security Model
+
+This tool is designed for authorized security auditing only.
+
+## Limitations
+
+...
+
+## Roadmap
+
+...
+
+## License
