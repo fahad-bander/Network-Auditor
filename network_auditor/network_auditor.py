@@ -101,32 +101,6 @@ PORT_FINDINGS = {
     ),
 }
 
-
-@dataclass
-class Finding:
-    severity: str
-    title: str
-    evidence: str
-    remediation: str
-
-
-@dataclass
-class Service:
-    port: int
-    protocol: str
-    name: str
-    banner: Optional[str] = None
-
-
-@dataclass
-class HostReport:
-    ip: str
-    mac: Optional[str]
-    hostname: Optional[str]
-    services: list[Service] = field(default_factory=list)
-    findings: list[Finding] = field(default_factory=list)
-
-
 def validate_network(value: str) -> ipaddress.IPv4Network:
     try:
         network = ipaddress.ip_network(value, strict=False)
