@@ -35,7 +35,7 @@ import time
 from dataclasses import asdict
 from typing import Optional
 
-from .models import Finding, HostReport, service
+from .models import Finding, HostReport, Service
 import aiohttp
 from scapy.all import ARP, Ether, srp
 
