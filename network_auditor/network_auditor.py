@@ -32,9 +32,10 @@ import json
 import socket
 import ssl
 import time
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict
 from typing import Optional
 
+from .models import Finding, HostReport, service
 import aiohttp
 from scapy.all import ARP, Ether, srp
 
